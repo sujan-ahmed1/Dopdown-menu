@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainMenu{
+      text-align: center; 
+      background: green;
+       
+}
+
+.mainMenu ul li{
+    display: inline-block;
+     margin-right: -4px;
+  
+}
+.mainMenu ul li a{
+    padding: 15px 20px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-right: 1px solid #ddd;
+     
+  
+    
+}
+.mainMenu ul li:hover > a{
+    background: tomato;
+    color: white;
+      
+}
+.mainMenu ul li:first-child a{
+    border-left: 1px solid #ddd;
+}
+
+/*Dopdown menu*/
+
+.mainMenu ul li{
+    position: relative;
+}
+.mainMenu ul li ul{
+    position: absolute;
+    width: 250px;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+    
+}
+.mainMenu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    transition: .5s;
+    
+   
+}
+.mainMenu ul li ul li{
+    display: block;
+    border-bottom: 1px solid #ddd;
+   background: green;
+}
+.mainMenu ul li ul li:first-child{
+    border-top: 1px solid #ddd;
+   
+}
+.mainMenu ul li ul li a{
+      display: block;
+    border-right: none;
+}
+.mainMenu ul li ul li:hover a{
+    
+}
+.mainMenu ul li ul li:first-child a{
+    border-left: none;
+}
+
+/*2nd dopdown code start*/
+
+.mainMenu ul li ul li{
+    position: relative;
+}
+.mainMenu ul li ul li ul{
+    position: absolute;
+    width: 250px;
+    top: 0;
+    left: 100%;
+    margin-left: 2px;
+    margin-top: -2px;
+    
+}
+.mainMenu ul li:hover .dopdown2 {   opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+	
+}
+.mainMenu ul li ul .submenu2:hover .dopdown2 {
+	opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.mainMenu ul li ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+.mainMenu ul li ul li ul li{
+    background: green;
+    color: white;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.mainMenu ul li ul li ul li:first-child a{
+    border-left: none;
+    border-top: 1px solid #ddd;
+}
+.mainMenu ul li ul li ul li:last-child a{
+    
+    border-bottom: 1px solid #ddd;
+}
+
+.mainMenu ul li ul li ul li a{
+    display: block;
+    border-right: none;
+}
+
+.mainMenu ul li ul li ul li:hover > a {
+    background: #f39c12;
+    color: white;
+}
+
+
+
